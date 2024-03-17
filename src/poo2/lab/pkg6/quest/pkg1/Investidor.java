@@ -32,7 +32,6 @@ class Investidor implements Observer {
 
     @Override
     public void update(String actionName, double price) {
-        // Implementação da lógica de atualização do investidor com base na variação de preço
         if (price >= maxPrice) {
             System.out.println("Investidor " + name + " vendeu acao " + actionName + " por " + price);
             sell(new Acao(actionName), price);

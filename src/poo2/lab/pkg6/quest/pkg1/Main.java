@@ -21,7 +21,6 @@ public class Main {
 
         acao.registerObserver(investidor);
 
-        // Simulação de alteração no preço da ação
         acao.notifyObservers("Itau", 150.0);
     }
     
